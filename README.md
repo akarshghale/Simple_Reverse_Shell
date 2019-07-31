@@ -1,7 +1,7 @@
 # Simple_Reverse_Shell_v1
 This is a simple reverse shell program created in Python. This is only for educational purpose and has been intended for beginners only.
 
-# What features will V2 have?
+# What features will v2 have?
 Well, since it is intended only for beginners don't expect a lot of features. One of the major changes will be the support for muti-threading to handle multiple connections and to support simultaneous operations.
 
 # Can I contribute?
