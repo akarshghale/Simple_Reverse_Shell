@@ -9,6 +9,7 @@ v1: 'quit()' to terminate connection and exit the shell.
 
 v2: 'list' : After the program starts use command 'list' to list all the connected targets.
     'select ID':  select the target you want to connect with their respective IDs. Example: select 1
+    'quit()' to terminate connection and exit the shell.
 
 # Can I contribute?
 Of course you can, but since it is intended for beginners so let's keep it that way.
