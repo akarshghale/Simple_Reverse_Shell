@@ -1,8 +1,15 @@
-# Simple_Reverse_Shell_v1
+# Simple_Reverse_Shell
 This is a simple reverse shell program created in Python. This is only for educational purpose and has been intended for beginners only.
 
-# What features will v2 have?
-Well, since it is intended only for beginners don't expect a lot of features. One of the major changes will be the support for muti-threading to handle multiple connections and to support simultaneous operations.
+# What features does v2 have?
+Well, since it is intended only for beginners don't expect a lot of features. One of the major changes is the support for muti-threading to handle multiple connections and to support simultaneous operations.
+
+# What are the commands in v1 & v2?
+v1: 'quit()' to terminate connection and exit the shell.
+
+v2: 'list' : After the program starts use command 'list' to list all the connected targets.
+    'select ID':  select the target you want to connect with their respective IDs. Example: select 1.
+    'quit()' to terminate connection and exit the shell.
 
 # Can I contribute?
 Of course you can, but since it is intended for beginners so let's keep it that way.
