@@ -76,7 +76,9 @@ def start_turtle():
             if conn is not None:
                 send_target_commands(conn)
             else:
-                print("Command Not Recognized!")
+                print("Target not available")
+        else:
+            print("Command Not Recognized!")
 
             
 
